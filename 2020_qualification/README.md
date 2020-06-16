@@ -1,1 +1,1 @@
-placeholder
+ESAb.py: I read through the judging script and the multi-processing script. A trick is that we need to use "print" statement combined with "sys.stdout.flush" to make the processes talk to each other smoothly. When debugging, we can print to stderr. When we have updated the states of our numbers, remember to record what have been changed. 
