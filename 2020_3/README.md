@@ -1,1 +1,1 @@
-placeholder
+namingCompromise.cpp: We have to be clear about the dp relationship. If the last character of the start and end string is the same, we operated nothing on the last char of the start string. If they are different, there are three scenarios: 1. we replaced the last character of the start string to be the last character of the end string. 2. We deleted the last character of the start string. 3. We append a character to the start string that matches the last char of the end string. Each of these three scenarios cost one edit distance.
