@@ -1,3 +1,5 @@
 manhattanCrepeCart.py: The most crucial observation is that, we can only place the cart at a position that is one distance to the right of a people, or one distance to the north of a people, or at position 0. We solve the problem along hoirzontal direction to obtain optimal x position, and then solve it along vertical direction to obtain the optimal y position, and combine the results to obtain the optimal (x,y) position of the cart. 
 
 draupnir.py: we first find a math formula that describes the relationship between number of rings at the end of i th day, with variables r1,r2,...r5,r6. We then find a way to separate the variables by modulo, given each r <= 100. 
+
+fairFight.cpp: To find the maximum in a range in O(1) time we use the "range minimum query" technique, i.e. building a sparse table. After that, we fix each C we are looking at, and assume it is the largest in a range \[L,R] that includes it. We then binary search on its left side and its right side (not including self to deal with the case of multiple C having the same value) to see how far L and R can extend.
