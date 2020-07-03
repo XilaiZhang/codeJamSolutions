@@ -1,3 +1,5 @@
 robotStrategy.py: key observation: we have to beat everyone. To do so, move along the characters one by one (wrap around as needed). If we can't win within the word's length, we will never win.
 
 powerArrangers.py: straight forward guessing of characters one by one.
+
+bacterialTactics.cpp: learnt a very useful theorem, sprague-grundy theorem. For each impartial games, we make a move and the current state transforms into many new states, let us call these transfomed states S1,S2,S3,S4...Sk. Now for each new state Sk, it might consists several subproblems (or only one subproblem). Let us call these subproblems P1,P2,P3...Pm. For each subprolem, we calculate the grundy value. Let us call these groundy values V1,V2...Vm. Now we xor them together to get the grundy value for the corresponding state, i.e. let Ak=V1 ^ V2 ^...^ Vm. Now, for all states, we will get k values, A1,A2,A3...Ak. We take the mex of As to determine if our current state is winning. Let B= mex(A1,A2...Ak), if B==0, under current state, the first player to move lose, otherwise, the first player to move wins. The base case is assigning every losing state to have a grundy value of 0. 
