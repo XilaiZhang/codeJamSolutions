@@ -1,1 +1,1 @@
-placeholder
+newElements-1.py: Let the ratio between the two element be k. The order between some pairs are irrelevant of k, others are related to k. The math reveals that each k in a specific range maps to a specifc ordering.
