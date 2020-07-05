@@ -1,1 +1,1 @@
-placeholder
+saveUniverse.py: I realized that the maximum reduction always comes from switching the last available "S" "C" pair. So we can move from end to start, greedily append yet to be reduced "S" characters, and operate on the list of "S"s when we encounter a "C". 
