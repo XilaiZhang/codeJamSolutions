@@ -1,1 +1,3 @@
 alphabetCake.py: greedily fill. First horizontal-wise and then vertical-wise.
+
+ratatouille.py: This is a non trivial greedy solution. To make sure I understand the theory behind this greedy solution, I implemented the exact opposite approach of the official analysis. For each ingredient, we can easily create a list of possible multiples. What we are interested in is the ordering of the intervals. We want to make sure that by applying our criteria of sorting, the intervals are getting more likely to be used for a higher common multiple (official analysis), or to be used for a lower common multiple (my implementation).  
