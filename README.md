@@ -1,1 +1,1 @@
-After solving a bunch of google kickstart questions, I have started to solve google code jam problems
+AC solutions of google codejam problems that pas all test cases 
