@@ -1,1 +1,1 @@
-placeholder
+countingSheep.py: Initially I bounded the multiple by 10^6. In fact we can bound the multiple by 100, because the smallest exponential of 10 that is greater than N, when added by N continuously, will always generate digits 1 to 9.  
