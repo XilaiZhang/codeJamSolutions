@@ -1,1 +1,3 @@
 rankFile.py: Each missing number will appear odd number of times.
+
+BFF.cpp: key observation is that each kid is part of a connected component that contains exactly one cycle. For a cycle of length more than 2, it is a potential answer. For a cycle with lenght 2, We can keep the cycle and append chains on both ends of the cycle. Thus for each unvisited kid K, we first detect all elments E that are in the cycle of K's connected componenet. We then run dfs from each E to retrieve the two longest chains C1 and C2, and also mark all kids in the connected component as visited. Let cycle length be L, if L>2, result=max(result, L). Let alternative answer A start with 0. For each connected component with L==2, A+=C1+C2+2. In the end we return max(result,A).
