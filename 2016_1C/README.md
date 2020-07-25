@@ -1,1 +1,1 @@
-placeholder
+senateEvacuation.py: when we are forced to remove 2, remove 2. If removing 1 and 2 are both possible, then removing 2 is equivalent to removing 1 and then removing 1. So we are safe to always remove 1 at a time, and if forced to remove 2, remove 2. 
