@@ -1,1 +1,3 @@
 senateEvacuation.py: when we are forced to remove 2, remove 2. If removing 1 and 2 are both possible, then removing 2 is equivalent to removing 1 and then removing 1. So we are safe to always remove 1 at a time, and if forced to remove 2, remove 2. 
+
+slides.py: The maximum number of ways we can get is fill in each (i,j) pair with a slide such that i<j. This will in total generate 2^(B-1) ways, anything more than that will cause a cycle. For each i to B, we already have 2^(B-i-1) ways. We can express M in binary and for each digit that is 1, we connect the corresponding i-to-B block (which provide 2^(B-i-1) ways) with building 1. For M that is exactly 2^(B-2), we connect everything available. 
