@@ -1,1 +1,1 @@
-placeholder
+ratherPerplexingShowdown.py: If we reverse thinking, we can build the entire tree from the end result. To maintain an alphabetically correct order, we can use a recursion function F to return a sorted string at each node. As we iterate from the leaf of tree to the root of the tree. At each step, let node A have two children B and C. then F(A)=F(B)+F(C) if B<C and F(A)=F(C)+F(B) otherwise. The answer is F(root).
