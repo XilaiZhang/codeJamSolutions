@@ -1,1 +1,1 @@
-AC solutions of google codejam problems that pas all test cases 
+AC solutions of google codejam problems that pass ALL test cases 
